@@ -3,7 +3,9 @@ import './App.css';
 import {useState} from 'react';
 
 function App() {
-  const [lista, setLista] = useState([]);
+  let ini = [];
+  
+  const [lista, setLista] = useState(ini);
 
   const addLista = ()=> {
     let val = document.getElementById('inp').value;
@@ -13,7 +15,7 @@ function App() {
   }
 
   let msg = ()=> {
-    if(lista.length == 0){    
+    if(lista.length === 0){    
       return (
         <div key="no-list" className='noList'>
           <h3 className="subtitle">Ops...</h3>
