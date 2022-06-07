@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+:root{
+  --def: #232226;
+  --sec: #888888;
+  --trd: #65509a;
+}
+::placeholder{
+  color: var(--sec);
+  font-size: 14px;
+}
+body{
+  background: var(--def);
+}
+#container{
+  width: 100%;
+  margin: 20px auto;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title{
+  margin: 30px 5px;
+  color: var(--sec);
+}
+#cont{
+  width: 100%;
+}
+#inp{
+  background: none;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid var(--trd);
+  border-radius: px;
+  color: var(--sec);
+  margin: 5px;
+  width: calc(70% - 20px);
+  font-size: 15px;
+}
+.bt{
+  background: var(--trd);
+  border: 2px solid var(--trd);
+  color: #eee;
+  padding: 5px;
+  border-radius: 2px;
+  margin: 5px;
+  cursor: pointer;
+  width: calc(30% - 20px);
+}
+#cards-out{
+  width: 100%;
+  margin-top: 20px;
+}
+.noList{
+  width: calc(calc(100% - 30px));
+  margin: 5px;
+  background: #302e33;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.subtitle{
+  color: var(--sec);
+}
+.noList-p{
+  color: var(--sec);
+  margin-top: 10px;
+}
+.card{
+  width: calc(100% - 30px);
+  margin: 10px 5px;
+  padding: 10px;
+  color: #eee;
+  background: var(--trd);
+  border-radius: 5px;
+}
