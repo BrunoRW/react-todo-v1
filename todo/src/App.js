@@ -10,7 +10,7 @@ function App() {
       return [];
     } else {
       return JSON.parse(local);
-    }
+    } 
   }
   
   let ini = getLocal();
