@@ -1,11 +1,25 @@
 import React from 'react';
 import './App.css';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 function App() {
-  let ini = [];
+
+  const getLocal = ()=> {
+    let local = localStorage.cards;
+    if(!local){
+      return [];
+    } else {
+      return JSON.parse(local);
+    }
+  }
+  
+  let ini = getLocal();
   
   const [lista, setLista] = useState(ini);
+
+  useEffect(() => {
+    localStorage.cards = JSON.stringify(lista);
+  }, [lista]);
 
   const addLista = ()=> {
     let val = document.getElementById('inp').value;
