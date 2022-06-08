@@ -28,7 +28,7 @@ function App() {
     console.log(lista)
   }
 
-  let msg = ()=> {
+  const msg = ()=> {
     if(lista.length === 0){    
       return (
         <div key="no-list" className='noList'>
